@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> Drag Papers</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'><link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="paper heart">
+
+    </div>
+    <div class="paper image">
+      <p> I fallen in</p>
+      <p> Love with you </p>
+      <p> When I saw you </p>
+      <img src="images/1.jpeg"/>
+    </div>
+    <div class="paper image">
+      <p> UFF those eyes and </p>
+      <p>crooked teeths and </p>
+      <p>chubby cheeks </p>
+      <img src="images/2.jpeg" />
+    </div>
+    <div class="paper image">
+      <p> SO ANAGHA I FINALLY</p>
+      <p > I GOT COMMITTED TO YOU </p>
+      <p> ON 23/06/2022</p>
+      <img src="images/3.jpeg" />
+    </div>
+    <div class="paper image">
+      <p> "The night we met" - Lord Huron</p>
+      <p> I love you so so much</p>
+      <img src="images/4.jpeg" />
+    </div>
+    <div class="paper image"> 
+      <p> Why so so much </p>
+      <p> Hawtie!!</p>
+      <img src="images/5.jpeg" />
+    </div>
+    <div class="paper image">
+      <p> I know there is so so <br> much distance and <br> time gap between us!! <br> but i never fail to love you  </p>
+      <img src="images/6.jpeg" />
+
+    </div>
+    <div class="paper image">
+      <p> I want to say so much</p>
+      <p> But I am so so much overwhelmed</p>
+      <p> Your presence means so much</p>
+      <p> I LOVE YOUUUUUU!!!! <33333</p>
+    </div>
+
+
+<button id="togglePromises" class="heart-button">❤️</button>
+
+
+<div class="promise-section hidden" id="promiseSection">
+  <h2>💖 My Promises to You</h2>
+  <div class="promise-cards">
+    <div class="promise-card">I promise to always be by your side 🤝</div>
+    <div class="promise-card">I promise to make you smile every day 😊</div>
+    <div class="promise-card">I promise to love you endlessly 💘</div>
+    <div class="promise-card">I promise midnight ice creams & morning cuddles 🍦☀️</div>
+    <div class="promise-card">I promise to remind you every day how beautiful you are 💫</div>
+    <div class="promise-card">I promise to grow with you & support your dreams 🌱</div>
+  </div>
+</div>
+<button class="calendar-button" onclick="createSharedCalendar()">📅 Create Our Shared Calendar</button>
+
+    <div class="music-bar">
+      <button onclick="playMusic()">▶</button>
+      <select id="songSelector" onchange="changeSong()">
+        <option value="music/night_we_met.mp3">The Night We Met - Lord Huron</option>
+        <option value="music/night_changes.mp3">Night Changes - One Direction</option>
+        <option value="music/die_with_smile.mp3">Die With a Smile - Bruno Mars</option>
+        <option value="music/perfect.mp3">Perfect - Ed Sheeran</option>
+        <option value="music/all_of_me.mp3">All of Me - John Legend</option>
+        <option value="music/just_the_way_you_are.mp3">Just the Way You Are - Bruno Mars</option>
+        <option value="music/thinking_out_loud.mp3">Thinking Out Loud - Ed Sheeran</option>
+        <option value="music/you_are_the_reason.mp3">You Are the Reason - Calum Scott</option>
+        <option value="music/say_you_wont_let_go.mp3">Say You Won’t Let Go - James Arthur</option>
+        <option value="music/yellow.mp3">Yellow – Coldplay</option>
+      </select>
+      <audio id="audioPlayer" controls hidden></audio>
+    </div>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>

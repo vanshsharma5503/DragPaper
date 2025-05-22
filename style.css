@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+
+
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: 1000px;
+  background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
+  background-position: center center;
+}
+
+.paper {
+  background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
+  background-size: 500px;
+  background-position: center center;
+  padding: 20px 100px;
+/*  min-width: 800px; */
+  
+  transform: rotateZ(-5deg);
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  
+  position: absolute;
+}
+
+.paper.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.paper.image {
+  padding: 10px;
+}
+.paper.image p {
+  font-size: 30px;
+}
+
+img {
+  max-height: 200px;
+  width: 100%;
+  user-select: none;
+}
+
+.paper.heart::after {
+  content: "";
+  background-image: url('https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+p {
+  font-family: 'Zeyada';
+  font-size: 50px;
+  color: rgb(0,0,100);
+  opacity: 0.75;
+  user-select: none;
+  
+  /*filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));*/
+}
+.music-bar {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 9999;
+}
+
+.music-bar select, .music-bar button {
+  font-size: 16px;
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+}
+.heart-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+  z-index: 9999;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.hidden {
+  display: none;
+}
+
+.promise-section {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  background: #fffafc;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  max-width: 400px;
+  z-index: 9999;
+}
+
+.promise-section h2 {
+  font-family: 'Zeyada', cursive;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #d63384;
+}
+
+.promise-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.promise-card {
+  background: #ffe0f0;
+  border: 2px dashed #d63384;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-family: 'Zeyada', cursive;
+  color: #4a0033;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.promise-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.calendar-button {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #ffd6e7;
+  color: #820a47;
+  border: 2px solid #d63384;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Zeyada', cursive;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+.calendar-button:hover {
+  background-color: #ffc2dc;
+  transform: scale(1.05);
+}
+
